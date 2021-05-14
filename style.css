@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background-color: hsl(0, 0%, 100%);
+}
+.bg-pattern {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  height: 230px;
+  background-color: hsl(225, 100%, 98%);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  z-index: -1;
+}
+/**************heading****************/
+.heading {
+  margin: 2.6% 11.7%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 700;
+}
+.heading h2 {
+  font-size: 26px;
+  color: hsl(230, 17%, 14%);
+}
+.heading p {
+  font-size: 13px;
+  margin-top: 1%;
+  color: hsl(228, 12%, 44%);
+}
+.mode {
+  display: inline-flex;
+  flex: auto;
+  justify-content: flex-end;
+  align-items: center;
+}
+.mode p {
+  margin-bottom: 1%;
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 38px;
+  background-color: hsl(230, 22%, 74%);
+  border-radius: 34px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0% 3%;
+}
+input[type="checkbox"]:checked {
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+input:hover[type="checkbox"] {
+  cursor: pointer;
+}
+input[type="checkbox"]::before {
+  content: "";
+  height: 16px;
+  width: 16px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  transition: 0.5s;
+  transform: translate(20px, 2px);
+}
+input:checked[type="checkbox"]::before {
+  transform: translate(2px, 2px);
+}
+/***************container1*************/
+.container1 {
+  margin: 3% 11.7%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+.cont1-header,
+.cont1-footer {
+  margin: 8%;
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.light-card {
+  background-color: hsl(227, 47%, 96%);
+  border-radius: 4px;
+}
+.light-card:hover {
+  background-color: hsl(232, 33%, 91%);
+  cursor: pointer;
+}
+.dark-card {
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 4px;
+}
+.dark-card:hover {
+  background-color: hsl(228, 26%, 27%);
+  cursor: pointer;
+}
+.cont1-header > img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4%;
+}
+.cont1-header {
+  font-weight: 700;
+}
+.light-card .cont1-header {
+  color: hsl(228, 12%, 44%);
+}
+.dark-card .cont1-header {
+  color: hsl(228, 34%, 66%);
+}
+.cont1-body {
+  text-align: center;
+}
+.cont1-body > h1 {
+  font-weight: 700;
+}
+.light-card .cont1-body > h1 {
+  color: hsl(230, 17%, 14%);
+}
+.dark-card .cont1-body > h1 {
+  color: hsl(0, 0%, 100%);
+}
+.cont1-body > p {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+.light-card .cont1-body > p {
+  color: hsl(228, 12%, 44%);
+}
+.dark-card .cont1-body > p {
+  color: hsl(228, 34%, 66%);
+}
+.cont1-footer {
+  color: hsl(163, 72%, 41%);
+  font-weight: 700;
+}
+.cont1-footer > img {
+  margin-right: 3%;
+}
+#cont11 {
+  border-top: 4px solid hsl(208, 92%, 53%);
+}
+#cont12 {
+  border-top: 4px solid hsl(203, 89%, 53%);
+}
+#cont13 {
+  border-radius: 4px;
+  background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+#cont13-inside {
+  margin-top: 4px;
+  display: grid;
+}
+#cont14 {
+  border-top: 4px solid hsl(348, 97%, 39%);
+}
+#cont14 .cont1-footer {
+  color: hsl(356, 69%, 56%);
+}
+/***************card2heading***********/
+.cont2-title {
+  margin: 2.6% 11.7%;
+  font-size: 25px;
+  color: hsl(228, 12%, 44%);
+}
+/***************container2*************/
+.container2 {
+  margin: 2% 11.7%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+.cont2-header,
+.cont2-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+.cont2-header {
+  padding: 9% 9% 5%;
+  font-weight: 700;
+}
+.light-card .cont2-header {
+  color: hsl(228, 12%, 44%);
+}
+.dark-card .cont2-header {
+  color: hsl(228, 34%, 66%);
+}
+.cont2-footer {
+  padding: 5% 9% 9%;
+}
+.foot1 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.light-card .foot1 {
+  color: hsl(230, 17%, 14%);
+}
+.dark-card .foot1 {
+  color: hsl(0, 0%, 100%);
+}
+.foot2 {
+  display: inline-flex;
+  flex: auto;
+  justify-content: flex-end;
+  align-items: center;
+}
+.foot2 > img {
+  margin-right: 1%;
+}
+#cont21 .foot2,
+#cont23 .foot2,
+#cont24 .foot2,
+#cont25 .foot2,
+#cont26 .foot2 {
+  color: hsl(163, 72%, 41%);
+}
+#cont22 .foot2,
+#cont27 .foot2,
+#cont28 .foot2 {
+  color: hsl(356, 69%, 56%);
+}
+/****************footer****************/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(146, 68%, 55%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/***************responsiveness************/
+@media screen and (max-width: 480px) {
+  .heading {
+    margin: 15% 8% 0%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .heading h2 {
+    font-size: 20px;
+  }
+  .mode {
+    justify-content: space-between;
+    margin-top: 8%;
+    padding-top: 6%;
+  }
+  .container1,
+  .container2 {
+    margin: 10% 8%;
+    grid-template-columns: auto;
+  }
+}
