@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Click here](https://github.com/suvankarpradhan/social-media-dashboard-with-theme-switcher-master)
-- Live Site URL: [Click here](https://your-live-site-url.com)
+- Live Site URL: [Click here](https://suvankarpradhan.github.io/social-media-dashboard-with-theme-switcher-master/)
 
 ## My process
 
