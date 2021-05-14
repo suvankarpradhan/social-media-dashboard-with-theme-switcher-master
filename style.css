@@ -259,6 +259,7 @@ input:checked[type="checkbox"]::before {
     justify-content: space-between;
     margin-top: 8%;
     padding-top: 6%;
+    border-top: 1px solid hsl(228, 34%, 66%);
   }
   .container1,
   .container2 {
